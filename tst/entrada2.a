@@ -1,0 +1,20 @@
+_start: loadi A0 IO
+loadi A1 IO
+_rise: multiply A0 A1
+jmpn A0 _change
+loadc A2 2
+divide A0 A2
+_reduct: loadi A3 _level
+subtract A0 A3
+jmpz A0 _step2
+jump _rise
+_change: negate A0 A0 ; troca o sinal
+_step2: push A1
+clear A1
+pop A4
+addi A4 2
+storei A4 _level
+loadi A1 IO
+jmpz A1 _start
+exit ; encerra o programa
+_level: .data 2 2

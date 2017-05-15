@@ -1,0 +1,13 @@
+loadc A0 10
+_loop: loadi A1 _quant
+loadi A2 _subt
+subtract A0 A2
+add A1 A2
+storei A1 _quant
+jmpz A0 _finish
+jmpn A0 _finish
+jump _loop
+_finish: move A0 A1
+exit
+_quant: .data 2 0
+_subt: .data 2 2
