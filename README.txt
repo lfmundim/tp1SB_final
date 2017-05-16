@@ -8,5 +8,5 @@
 
 #Arquivos extras:
 	-> Escolheu-se incluir no arquivo compactado o código para a 'Swombat.cpu', para caso o usuário não o possua.
-	-> Incluiu-se, na pasta 'doc', as imagens utilizadas na documentação para melhor visualização, bem como as imagens referenciadas por ela.
+	-> Incluiu-se, na pasta 'doc', as imagens utilizadas na documentação para melhor visualização.
 	-> Por último, foi incluído o PDF com a especificação do trabalho prático.
